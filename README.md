@@ -18,3 +18,8 @@ Downstream services pe overload na ho.
 Resource usage predictable rahe.
 System stability aur reliability maintain ho.
 Fair resource sharing ensure ho.
+Multi-tenant system :)
+Multi-tenant system wo hota hai jahan ek hi software / infrastructure ko multiple customers (tenants) use karte hain, lekin har tenant ka data aur context alag (isolated) rehta hai.
+Quotas lagata hai → har tenant ko limited requests/resources milti hain.
+Resource limits set karta hai → ek tenant zyada CPU/memory na use kar le.
+Run context isolation karta hai → ek tenant dusre tenant ke data ya runs access nahi kar sakta.
