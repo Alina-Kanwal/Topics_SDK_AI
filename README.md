@@ -32,3 +32,4 @@ bas tool ka naam/description change karte hain, history filter nahi karte.
 on_handoff ek callback hota hai jo handoff ke waqt trigger hota hai, history ko filter karne ka kaam nahi karta.
 🔹 on_handoff
 ek callback hota hai jo handoff ke waqt trigger hota hai, history ko filter karne ka kaam nahi karta.
+on_handoff → jaise hi handoff hota hai, console pe log print ho jata hai ke handoff kis agent ko hua.
