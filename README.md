@@ -51,6 +51,19 @@ High temperature = Fun dost jo har bar naye ideas deta hai, chahe kabhi ajeeb bh
 🔧 Developer kaha use karta hai?
 Ads ya story writing ke liye developer high temperature rakhta hai → output har bar naya aur creative ho.
 Technical docs likhne ke liye low temperature rakhta hai → taake har bar reliable aur clear ho.
+🔹 TOP_k
+---------------Low Top_k (chhoti value, e.g., k=1,2,3)
+Model sirf thode hi top words consider karega.
+Output zyada restricted, safe aur predictable hoga.
+Example: Agar k=1 → model hamesha sabse likely word hi choose karega (bilkul deterministic jaisa).
+---------------High Top_k (bari value, e.g., k=20,50,100)
+Model bahut saare possible words me se choose karega.
+Output zyada varied, diverse aur kabhi-kabhi unexpected hoga.
+Example: Agar k=50 → model ke paas bahut options hain, har run pe alag word aa sakta hai.
+🔹 Top_p (Nucleus sampling)
+Instead of fixed number, yeh probability threshold use karta hai.
+Example: agar p=0.9, to model sirf un words ko consider karega jinki cumulative probability 90% banti hai.
+Top_p real-world mai aisa hai jaise waiter sirf woh dishes recommend kare jo zyadatar log khate hain, taake suggestions balanced aur natural lagen.
 
 
 
