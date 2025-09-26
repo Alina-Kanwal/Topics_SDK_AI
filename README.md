@@ -93,7 +93,12 @@ E-commerce website me product image pe hover karne par tooltip: “Click to view
 “Numbered and bulleted list formatting” ka matlab hai text ko list form me likhna — jahan har point clearly separate ho.
 Bullets yani DOTS(.) Jab order important nahi hota, to bullets use karte hain.
 Bullet order important hota hai, to numbering use karte hain.
-
+🔹 Parse = Raw data ko samajhna aur usse structured form me convert karna.
+🔹 Pydantic
+Pydantic kya hai?
+Python library hai.
+Mainly use hoti hai data validation aur data parsing ke liye.
+Aap ek Model (class) banate ho jisme fields define karte ho, aur Pydantic ensure karta hai ke jo data aaya hai wo correct type ka ho.
 
 
 
