@@ -112,7 +112,19 @@ constr, conint, confloat → Constrained (restricted) string, integer, float (le
 RootModel (Pydantic v2) → Agar single value ya list ko model banana ho.
 field_validator (v2) / validator (v1) → Custom validation rules likhne ke liye.
 ConfigDict (v2) → Model configuration settings ke liye (jaise extra fields allow ya forbid).
-
+🔹 1. BaseModel
+Pydantic ka core feature.
+Strong data validation + parsing karta hai.
+🔹 Dataclass kya hai?
+Python ka built-in decorator hai (@dataclass).
+Iska kaam hai: aapko boilerplate code (constructor, repr, comparison methods) likhne ki zarurat na ho.
+Bas class me fields likho → Python automatically baki kaam kar deta hai.
+Normal class ky mukably maon data class laga kar kaam krna asan hojata hy.
+Dataclass = Python ka shortcut to reduce boilerplate code in classes.
+Ye mainly data hold karne wali classes ke liye bana hai (isliye naam bhi “data class” hai).
+🔹 BaseModel, pydantic.dataclasses.dataclass
+BaseModel = Pydantic ka full package (validation + parsing + serialization + configs).
+pydantic.dataclasses.dataclass = Normal dataclass with validation only (extra BaseModel features missing).
 
 
 
