@@ -99,6 +99,19 @@ Pydantic kya hai?
 Python library hai.
 Mainly use hoti hai data validation aur data parsing ke liye.
 Aap ek Model (class) banate ho jisme fields define karte ho, aur Pydantic ensure karta hai ke jo data aaya hai wo correct type ka ho.
+🔹 Pydantic me kab error aata hai?
+Jab bhi data validation fail hoti hai (type galat ya rule break ho) → Pydantic ValidationError raise karta hai.
+🔹 Pydantic se commonly import hone wali cheezen
+BaseModel → Data models banane ke liye, automatic validation & parsing karta hai.
+Field → Model fields ke liye extra rules/metadata (default values, min/max, description).
+ValidationError → Jab data galat hota hai to ye error throw hota hai.
+EmailStr → Email format validate karne ke liye ready-made type.
+AnyUrl → URL validate karne ke liye.
+IPv4Address / IPv6Address → IP addresses validate karne ke liye.
+constr, conint, confloat → Constrained (restricted) string, integer, float (length, range waghera ke limits).
+RootModel (Pydantic v2) → Agar single value ya list ko model banana ho.
+field_validator (v2) / validator (v1) → Custom validation rules likhne ke liye.
+ConfigDict (v2) → Model configuration settings ke liye (jaise extra fields allow ya forbid).
 
 
 
