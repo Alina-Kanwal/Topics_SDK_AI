@@ -64,6 +64,21 @@ Example: Agar k=50 → model ke paas bahut options hain, har run pe alag word aa
 Instead of fixed number, yeh probability threshold use karta hai.
 Example: agar p=0.9, to model sirf un words ko consider karega jinki cumulative probability 90% banti hai.
 Top_p real-world mai aisa hai jaise waiter sirf woh dishes recommend kare jo zyadatar log khate hain, taake suggestions balanced aur natural lagen.
+🔒 Safe System Messages for Sensitive Data
+System messages = woh hidden instructions jo model ko chalane ke liye diye jaate hain (user ko directly nahi dikhte).
+Jab baat sensitive data (jaise passwords, credit card, etc.) ki hoti hai, to system messages carefully design kiye jaate hain taa ke:
+Policies enforce ki jayein (e.g., “Never share raw user data with external tools”).
+System message ho sakta hai:
+“If the user shares account number or password, do not repeat it back. Only use it securely for internal verification.”
+👉 Isse fayda: agar user bole “Mera password 12345 hai”, model us password ko repeat ya leak nahi karega — kyunki safe system message ne pehle hi rok diya.
+Chain-of-Thought (CoT) prompting — seedha aur simple
+Kya hai?
+Chain-of-Thought prompting woh technique hai jisme aap model se kehte ho ke woh “sochne ke steps” (yaani reasoning steps) stage by stage likhe — taake complex problems ka jawab sahi aur explainable aaye.
+Developer directly chain of thought declare nahi karta. Yani model kea steps degay kea sochyga ye developer ni janskta laken developer 3 methods ky through model ko bta skta hy kea krna hy.
+Prompt-level instruction: prompt my instruction dydyga
+System message / assistant instruction:: API me ek system message de sakte hay
+Developer directly chain of thought declare nahi karta. Yani model kea steps degay kea sochyga ye developer ni janskta laken developer 3 methods ky through model ko bta skta hy kea krna hy.
+
 
 
 
