@@ -78,6 +78,23 @@ Developer directly chain of thought declare nahi karta. Yani model kea steps deg
 Prompt-level instruction: prompt my instruction dydyga
 System message / assistant instruction:: API me ek system message de sakte hay
 Developer directly chain of thought declare nahi karta. Yani model kea steps degay kea sochyga ye developer ni janskta laken developer 3 methods ky through model ko bta skta hy kea krna hy.
+🔹 Markdown = ek simple tarika text ko format karne ka, jisme normal text ke saath chhote-chhote symbols (#, *, -, etc.) use hote hain.
+🔹 Clickable Image
+Image ko like link ya button bna dena jis pr click karky dosry page pr jasken.
+🔹 Tooltip ek chhota text bubble hota hai jo mouse hover karne par dikhai deta hai.
+Ye usually extra info ya hint dene ke liye hota hai.
+Example:
+YouTube ka like button hover karo → tooltip aata hai “I like this”.
+🔹 Clickable Image with Tooltip (Dono combine)
+ismy dono kaam hojayengy
+Example (real world):
+E-commerce website me product image pe hover karne par tooltip: “Click to view details”.
+🔹 Numbered and bulleted list
+“Numbered and bulleted list formatting” ka matlab hai text ko list form me likhna — jahan har point clearly separate ho.
+Bullets yani DOTS(.) Jab order important nahi hota, to bullets use karte hain.
+Bullet order important hota hai, to numbering use karte hain.
+
+
 
 
 
