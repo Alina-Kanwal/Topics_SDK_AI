@@ -31,5 +31,39 @@ Aap ek agent se dusre agent ko handoff karte ho. Lekin aap chahte ho ke target a
 bas tool ka naam/description change karte hain, history filter nahi karte.
 on_handoff ek callback hota hai jo handoff ke waqt trigger hota hai, history ko filter karne ka kaam nahi karta.
 🔹 on_handoff
+Matlab on_handoff ka use hota hai:
+Logging karne ke liye
+Custom actions run karne ke liye
+Handoff ke waqt special handling dene ke liye
+🔹 Agent constructor ka matlab
+Constructor = jab aap Agent class ka instance create karte ho (i.e. Agent(...) call karte ho).Tw y optional or required cheezen hoti hain
+Required = model ya model_settings.
+Optional = name, instructions, tools, handoff.
+🔹 Prompt Engineering
+Definition: Prompt engineering ka matlab hai model ko sahi aur effective instructions dena taa ke woh desired output generate kare
+🔹 Temperature
+Creativity control karta hai.
+Low value (0–0.3): model deterministic aur factual hota hai (har bar lagbhag same output).
+High value (0.7–1.0+): model creative aur random hota hai (har bar thoda naya answer).
+Short Analogy:
+Low temperature = Serious dost jo hamesha safe jawab deta hai.
+High temperature = Fun dost jo har bar naye ideas deta hai, chahe kabhi ajeeb bhi lagay.
+🔧 Developer kaha use karta hai?
+Ads ya story writing ke liye developer high temperature rakhta hai → output har bar naya aur creative ho.
+Technical docs likhne ke liye low temperature rakhta hai → taake har bar reliable aur clear ho.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ek callback hota hai jo handoff ke waqt trigger hota hai, history ko filter karne ka kaam nahi karta.
 on_handoff → jaise hi handoff hota hai, console pe log print ho jata hai ke handoff kis agent ko hua.
