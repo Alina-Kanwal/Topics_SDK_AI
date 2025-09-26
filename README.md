@@ -119,12 +119,14 @@ Strong data validation + parsing karta hai.
 Python ka built-in decorator hai (@dataclass).
 Iska kaam hai: aapko boilerplate code (constructor, repr, comparison methods) likhne ki zarurat na ho.
 Bas class me fields likho → Python automatically baki kaam kar deta hai.
-Normal class ky mukably maon data class laga kar kaam krna asan hojata hy.
+Normal class ky mukably main data class laga kar kaam krna asan hojata hy.
 Dataclass = Python ka shortcut to reduce boilerplate code in classes.
-Ye mainly data hold karne wali classes ke liye bana hai (isliye naam bhi “data class” hai).
+Ye mainly data hold karne wali classes ke liye bana hai (isliye naam bhi “data class” hai). jaise bht sari products post krni ho web pr or sb ka name,price etc likhna hoo
 🔹 BaseModel, pydantic.dataclasses.dataclass
 BaseModel = Pydantic ka full package (validation + parsing + serialization + configs).
 pydantic.dataclasses.dataclass = Normal dataclass with validation only (extra BaseModel features missing).
+BaseModel → Zyada popular, zyada powerful, production-grade (validation + parsing + features).
+pydantic.dataclasses.dataclass → Rarely used, sirf jab developer ko Python dataclass style pasand ho aur basic validation chahiye.
 
 
 
