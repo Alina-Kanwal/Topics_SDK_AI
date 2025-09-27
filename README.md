@@ -166,6 +166,9 @@ trace	Enabled	Tracing ---------by default on hoti hai (development ke liye)
 🔹 So, Tool = ek external function jise agent call kar sakta hai reasoning ke beech me.
 Jab agent ko lagta hai usse koi function use karna hai, wo tool call karta hai.
 Agar us tool me error aata hai, SDK automatically handle karta hai — agent crash nahi hota, balki politely respond karta hai.
+Usee inquerry khn jati hy :)
+User → Main Agent → LLM(LLM decide krta hy querry ka ans my krun ya tool call ya handoff hona chaye) YHN LLM main agent ka use hota hy → (tool ya handoff) → Response
+
 
 
 
