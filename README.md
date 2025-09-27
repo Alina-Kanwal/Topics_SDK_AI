@@ -116,6 +116,7 @@ ConfigDict (v2) → Model configuration settings ke liye (jaise extra fields all
 Pydantic ka core feature.
 Strong data validation + parsing karta hai.
 🔹 Dataclass kya hai?
+Generates a strict JSON schema By default.
 Python ka built-in decorator hai (@dataclass).
 Iska kaam hai: aapko boilerplate code (constructor, repr, comparison methods) likhne ki zarurat na ho.
 Bas class me fields likho → Python automatically baki kaam kar deta hai.
@@ -127,6 +128,8 @@ BaseModel = Pydantic ka full package (validation + parsing + serialization + con
 pydantic.dataclasses.dataclass = Normal dataclass with validation only (extra BaseModel features missing).
 BaseModel → Zyada popular, zyada powerful, production-grade (validation + parsing + features).
 pydantic.dataclasses.dataclass → Rarely used, sirf jab developer ko Python dataclass style pasand ho aur basic validation chahiye.
+✅ Dataclass — lightweight; SDK uses it to auto-generate a JSON schema and basic validation.
+✅ BaseModel — powerful; generates schema and does deep validation, conversions, defaults, and error handling.
 🔹 Type hints Python me likhe jaate hain jisse aap bata sakte ho variable ka expected type.
 name: str
 age: int
@@ -203,7 +206,8 @@ Trace: "Answer user query"
          ├─ Span 3.1: LLM reasoning (Sub-Agent)
          └─ Span 3.2: Tool call (Explain Trend)
 Trace: "Answer user query"
-
+Which return type does Runner.run_streamed(...) provide?
+d) RunResultStreaming
  
 
 
