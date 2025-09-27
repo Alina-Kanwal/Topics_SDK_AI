@@ -127,9 +127,26 @@ BaseModel = Pydantic ka full package (validation + parsing + serialization + con
 pydantic.dataclasses.dataclass = Normal dataclass with validation only (extra BaseModel features missing).
 BaseModel → Zyada popular, zyada powerful, production-grade (validation + parsing + features).
 pydantic.dataclasses.dataclass → Rarely used, sirf jab developer ko Python dataclass style pasand ho aur basic validation chahiye.
-
-
-
+🔹 Type hints Python me likhe jaate hain jisse aap bata sakte ho variable ka expected type.
+name: str
+age: int
+🧠 Pydantic kya karta:
+Agar id string hua → error ya convert karega (depends on type).
+Agar is_active “True” likha ho (string form me), to usko bool me convert karega.
+Automatically schema generate karega (OpenAPI ya JSON schema format me).
+🔹 Schema
+“Schema” ka matlab hota hai ek structure jo batata hai data kis format me hona chahiye.
+🔹 Using dataclasses as output_type in agents
+output_type
+Agent ka output ko aik specific form my bna dena.
+Aap dataclass ko output_type ke taur par use kar sakte ho.
+Matlab model ka textual response us dataclass ke structure me auto-parse ho jaayega.
+Feature	Benefit
+Structured Output =>Response directly usable as Python object
+Auto Validation	Agar=>field missing ho, error milega
+Easy to Use =>Developer ko parsing manually nahi karni
+Type Safety => Har field ka type fix hota hai (str, float, etc.)
+data class ky through validation ni hoti mgr jb out_type generate hoga data class ky through tw ans user tk jany say phly sdk type_validation krleta hy. 
 
 
 
