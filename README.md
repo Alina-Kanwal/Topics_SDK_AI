@@ -181,10 +181,30 @@ SDK in errors ko handle karta hai taake agent crash na kare.
 | 🛡 SDK catches error | Agent crash hone se bachata hai                                |
 | 💬 Model notified    | “Tool failed” ya “error occurred”                              |
 | 🔁 Retry or Respond  | Model error ko handle kar sakta hai (retry ya apology message) |
-🔹 1. Dynamic Instructions — (Changing Agent Behavior at Runtime)
+🔹 Dynamic Instructions — (Changing Agent Behavior at Runtime)
 Jab Agent ke instructions (ya uska behavior) runtime me change kiya jaye,
 to use Dynamic Instructions kehte hain.
+🔹 Context Object
+Context objects ek temporary memory jaise hote hain jisme
+runtime data (like user ID, preferences, tool results) store hota hai.
+Temporary info dena (user ya data related)
+{user: "Alina", location: "Pakistan"}
+🔹 Tracing
+Tracing ka matlab hai:
+"Agent ke execution ka record rakhna" (LM ko call karna, tool chalana, ya handoff dena)---Ye pora process hota hy
+🔹 Single operation record
+jaisay Tool call YAAA LLM call.
+🔹 Multi-run Trace
+Multiple agents / sub-agents in one trace	Main agent + handoff agent execution (S
+Trace: "Answer user query"
+ ├─ Span 1: LLM reasoning (Main Agent)
+ ├─ Span 2: Tool call (StockAPI)
+ └─ Span 3: Handoff → Sub-Agent
+         ├─ Span 3.1: LLM reasoning (Sub-Agent)
+         └─ Span 3.2: Tool call (Explain Trend)
+Trace: "Answer user query"
 
+ 
 
 
 
