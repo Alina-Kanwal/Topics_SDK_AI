@@ -168,6 +168,23 @@ Jab agent ko lagta hai usse koi function use karna hai, wo tool call karta hai.
 Agar us tool me error aata hai, SDK automatically handle karta hai — agent crash nahi hota, balki politely respond karta hai.
 Usee inquerry khn jati hy :)
 User → Main Agent → LLM(LLM decide krta hy querry ka ans my krun ya tool call ya handoff hona chaye) YHN LLM main agent ka use hota hy → (tool ya handoff) → Response
+🔹 4. Error Handling During Tool Execution
+Kabhi-kabhi tool execution ke dauran error aa sakta hai, jaise:
+Wrong arguments → add("five", 7)
+Tool unavailable → network down
+Internal bug in tool
+SDK in errors ko handle karta hai taake agent crash na kare.
+| Step                 | Description                                                    |
+| -------------------- | -------------------------------------------------------------- |
+| 🧠 Model calls tool  | e.g. `search("Lahore weather")`                                |
+| ⚠️ Tool throws error | TypeError / ValueError etc.                                    |
+| 🛡 SDK catches error | Agent crash hone se bachata hai                                |
+| 💬 Model notified    | “Tool failed” ya “error occurred”                              |
+| 🔁 Retry or Respond  | Model error ko handle kar sakta hai (retry ya apology message) |
+🔹 1. Dynamic Instructions — (Changing Agent Behavior at Runtime)
+Jab Agent ke instructions (ya uska behavior) runtime me change kiya jaye,
+to use Dynamic Instructions kehte hain.
+
 
 
 
