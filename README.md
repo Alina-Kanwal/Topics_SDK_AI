@@ -146,8 +146,26 @@ Structured Output =>Response directly usable as Python object
 Auto Validation	Agar=>field missing ho, error milega
 Easy to Use =>Developer ko parsing manually nahi karni
 Type Safety => Har field ka type fix hota hai (str, float, etc.)
-data class ky through validation ni hoti mgr jb out_type generate hoga data class ky through tw ans user tk jany say phly sdk type_validation krleta hy. 
-
+data class ky through validation ni hoti mgr jb out_type generate hoga data class ky through tw ans user tk jany say phly sdk type_validation krleta hy.
+🔹 OpenAI Agents SDK
+SDK = Software Development Kit
+Matlab: ek toolset / library jo developers ko code likhne me madad karti hai.
+👉 Example:
+Jese mobile app banane ke liye Android SDK hoti hai,
+waise hi OpenAI Agents SDK developers ko AI agents banane me help karti hai.
+🔹 1. General Concepts — (Base Understanding)
+🧠 Agent, Instructions, Tools, Handoff, Output Type, Run / Event System, Runner.
+🔹 2. Defaults — (Agar aap define nahi karte)
+Parameter	Default Value	Description
+model	"gpt-4.1-mini"	---------Agar aap model specify nahi karte
+output_type	str	---------------Output plain text hoga agar specify nahi kiya
+instructions	"" (empty)	-----Agent ke paas koi special behavior nahi
+max_turns	10	-----------------Conversation automatically stop ho jaayegi after 10 turns
+tools	[]	---------------------Agent ke paas koi external tool nahi
+trace	Enabled	Tracing ---------by default on hoti hai (development ke liye)
+🔹 So, Tool = ek external function jise agent call kar sakta hai reasoning ke beech me.
+Jab agent ko lagta hai usse koi function use karna hai, wo tool call karta hai.
+Agar us tool me error aata hai, SDK automatically handle karta hai — agent crash nahi hota, balki politely respond karta hai.
 
 
 
