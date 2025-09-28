@@ -29,8 +29,8 @@ WHY USE?
 Aap ek agent se dusre agent ko handoff karte ho. Lekin aap chahte ho ke target agent ko puri chat history na mile, sirf last 2 messages milein. tw is kay lea input_filter ✅ use hoga.
 🔹 tool_name_override aur tool_description_override
 bas tool ka naam/description change karte hain, history filter nahi karte.
-on_handoff ek callback hota hai jo handoff ke waqt trigger hota hai, history ko filter karne ka kaam nahi karta.
 🔹 on_handoff
+on_handoff ek callback hota hai jo handoff ke waqt trigger hota hai, history ko filter karne ka kaam nahi karta.
 Matlab on_handoff ka use hota hai:
 Logging karne ke liye
 Custom actions run karne ke liye
